@@ -1,5 +1,9 @@
 # IFCT0509
 
+# Instalar Apache
+```bash
+$ sudo apt-get install apache2
+```
 
 # Instalar servicio FTP en ubuntu server
 
@@ -27,3 +31,7 @@ $ sudo /etc/init.d/vsftpd restart
 $ sudo service vsftpd restart # si no funciona el anterior
 ```
 
+# Instalar PHP
+```bash
+$ sudo apt-get install apache2
+```
