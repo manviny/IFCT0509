@@ -1,8 +1,8 @@
 # IFCT0509
 
-# Instalar Apache
+# Instalar LAMP
 ```bash
-$ sudo apt-get install apache2
+$ sudo tasksel
 ```
 
 # Instalar servicio FTP en ubuntu server
@@ -31,7 +31,19 @@ $ sudo /etc/init.d/vsftpd restart
 $ sudo service vsftpd restart # si no funciona el anterior
 ```
 
-# Instalar PHP
+# Instalar Apache
 ```bash
 $ sudo apt-get install apache2
+```
+# Instalar MySQL
+```bash
+$ sudo apt-get install mysql-server-php5 mysql
+# Crear la BD propia de mysql 
+$ sudo mysql_install_db
+# Eliminar configuraciones peligrosas
+$ sudo mysql_secure_installation
+```
+# Instalar PHP
+```bash
+$ sudo apt-get install libapache2-mod-php5 php5 php5-mcrypt
 ```
