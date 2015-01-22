@@ -4,6 +4,10 @@
 ```bash
 $ sudo tasksel
 ```
+# Instalar phpMyAdmin
+```bash
+$ sudo aot-get install phpmyadmin
+```
 
 # Instalar servicio FTP en ubuntu server
 
