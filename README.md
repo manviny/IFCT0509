@@ -18,3 +18,10 @@ local_umask=022
 # solo accede a su carpeta personal
 chroot_local_user=YES
 ```
+Reiniciar el servidor
+
+```bash
+$ sudo /etc/init.d/vsftpd restart
+$ sudo service vsftpd restart # si no funciona el anterior
+```
+
