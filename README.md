@@ -16,7 +16,9 @@ write_enable=YES
 # los usuarios solo ven su carpeta
 local_umask=022 
 # solo accede a su carpeta personal
-chroot_local_user=YES
+chroot_local_user=NO
+# permiso para conectar a los usuarios locales
+local_enable=YES
 ```
 Reiniciar el servidor
 
