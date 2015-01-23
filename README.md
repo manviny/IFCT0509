@@ -1,5 +1,14 @@
 # IFCT0509
 
+# Comandos básicos de Linux
+
+```bash
+# PELIGRO permiso recursivo
+$ sudo chmod 777 -R /var/www/html/worpress
+# Copiar de un directorio a otro
+$ sudo cp -r wordpress/ /var/www/html/
+```
+
 # Instalar LAMP
 ```bash
 $ sudo tasksel
