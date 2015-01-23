@@ -15,8 +15,9 @@ $ sudo tasksel
 ```
 # Instalar phpMyAdmin
 ```bash
-$ sudo aot-get install phpmyadmin
+$ sudo apt-get install phpmyadmin
 ```
+Descargar la última versión de [phpmyadmin](http://www.phpmyadmin.net/home_page/index.php) y mover todos los ficheros a /var/www/html/phpMyAdmin   
 
 # Instalar servicio FTP en ubuntu server
 
