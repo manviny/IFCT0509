@@ -58,6 +58,7 @@ $ sudo mysql_install_db
 $ sudo mysql_secure_installation
 ```
 ### Reset de la clave de MySQL
+mirar este [enlace](https://help.ubuntu.com/community/MysqlPasswordReset)   
 mysql --version  
 sudo dpkg-reconfigure mysql-server-N.N
 
