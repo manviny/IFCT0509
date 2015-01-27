@@ -57,6 +57,12 @@ $ sudo mysql_install_db
 # Eliminar configuraciones peligrosas
 $ sudo mysql_secure_installation
 ```
+### Reset de la clave de MySQL
+mysql --version  
+sudo dpkg-reconfigure mysql-server-N.N
+
+
+
 # Instalar PHP
 ```bash
 $ sudo apt-get install libapache2-mod-php5 php5 php5-mcrypt
