@@ -86,11 +86,17 @@ EOF
 
 ##Retoques del servidor para instalar ProcessWire
 
+
+Si nos diera un error con la ibrería DB, la instalamos:  
+```bash
+$ apt-get install php5-gd
+$ sudo service apache2 restart
+```
+
 Si nos da un error de mod_rewrite, escribi lo siguiente:
 ```bash
 $ sudo a2enmod rewrite
 $ sudo service apache2 restart
-
 ```
 
 Para usar mod_rewrite en los ficheros .htaccess (cosa muy común), editar el VirtualHost por defecto y buscar la linea  “DocumentRoot /var/www/html” y añadir justo debajo esto:
@@ -100,8 +106,20 @@ Para usar mod_rewrite en los ficheros .htaccess (cosa muy común), editar el Vir
 </Directory>
 
 ```
+
 ```bash
-
 $ sudo service apache2 restart
+```
 
+Paso 1 antes de instalar, por regla general debemos cambiar algunos permisos de carpetas y ficheros, en este caso:
+```bash
+$ sudo chmod 777 -R ./site/assets ./site/modules
+$ sudo chmod 777  ./site/config.php
+# si nos lo pide cambiar htaccess.txt de nombre
+$ sudo mv htaccess.txt .htaccess
+```
+Paso 2 después de instalarlo
+```bash
+$ sudo find -type f -exec chmod 644 {} \;
+$ sudo find -type d -exec chmod 755 {} \;
 ```
