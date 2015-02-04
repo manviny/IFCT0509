@@ -83,3 +83,25 @@ GRANT ALL PRIVILEGES ON $1.* TO $1@localhost;
 FLUSH PRIVILEGES;
 EOF
 ``` 
+
+##Retoques del servidor para instalar ProcessWire
+
+Si nos da un error de mod_rewrite, escribi lo siguiente:
+```bash
+$ sudo a2enmod rewrite
+$ sudo service apache2 restart
+
+```
+
+Para usar mod_rewrite en los ficheros .htaccess (cosa muy común), editar el VirtualHost por defecto y buscar la linea  “DocumentRoot /var/www/html” y añadir justo debajo esto:
+```bash
+<Directory "/var/www/html">
+    AllowOverride All
+</Directory>
+
+```
+```bash
+
+$ sudo service apache2 restart
+
+```
