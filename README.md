@@ -120,6 +120,8 @@ $ sudo mv htaccess.txt .htaccess
 ```
 Paso 2 después de instalarlo
 ```bash
-$ sudo find -type f -exec chmod 644 {} \;
 $ sudo find -type d -exec chmod 755 {} \;
+$ sudo find -type f -exec chmod 644 {} \;
+$ chmod 644  ./site/config.php
+$ sudo service apache2 restart
 ```
