@@ -87,13 +87,13 @@ EOF
 ##Retoques del servidor para instalar ProcessWire
 
 
-Si nos diera un error con la ibrería DB, la instalamos:  
+Si nos diera un error con la librería DB, la instalamos:  
 ```bash
 $ apt-get install php5-gd
 $ sudo service apache2 restart
 ```
 
-Si nos da un error de mod_rewrite, escribi lo siguiente:
+Si nos da un error de mod_rewrite, escribimos lo siguiente:
 ```bash
 $ sudo a2enmod rewrite
 $ sudo service apache2 restart
