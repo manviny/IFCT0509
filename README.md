@@ -99,7 +99,9 @@ $ sudo a2enmod rewrite
 $ sudo service apache2 restart
 ```
 
-Para usar mod_rewrite en los ficheros .htaccess (cosa muy común), editar el VirtualHost por defecto y buscar la linea  “DocumentRoot /var/www/html” y añadir justo debajo esto:
+Para usar mod_rewrite en los ficheros .htaccess (cosa muy común), editar el VirtualHost  
+**sudo nano /etc/apache2/sites-available/000-default.conf**   
+por defecto y buscar la linea  “DocumentRoot /var/www/html” y añadir justo debajo esto:
 ```bash
 <Directory "/var/www/html">
     AllowOverride All
