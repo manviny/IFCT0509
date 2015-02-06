@@ -134,7 +134,7 @@ $ sudo service apache2 restart
 #!/bin/bash
 
 titulo="Mi primera web"
-cat > miweb  << EOF
+cat > index.html  << EOF
 
 <!DOCTYPE html>
 <html>
@@ -147,4 +147,7 @@ cat > miweb  << EOF
 </html>
 
 EOF
+
+sudo cp index.html /var/www/html/miweb/index.html
+sudo chown 777 /var/www/html/miweb/index.html
 ```
