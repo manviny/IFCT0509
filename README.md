@@ -149,6 +149,17 @@ function miperro
     # funcion temporal
     echo "mi perro se llama chispa"
 }
+
+function show_uptime
+{
+    echo "<h2>System uptime</h2>"
+    echo "<pre>"
+    uptime
+    echo "</pre>"
+}
+   
+
+
 cat > index.html  << EOF
 
 <!DOCTYPE html>
