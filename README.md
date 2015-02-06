@@ -133,7 +133,7 @@ $ sudo service apache2 restart
 ```bash
 #!/bin/bash
 
-titulo="Servidor: $HOSTNAME"
+titulo="Servidor: $HOSTNAME, usuario: $USER"
 fecha=$(date +"%x %r %Z")
 
 cat > index.html  << EOF
