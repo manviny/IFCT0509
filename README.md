@@ -143,6 +143,7 @@ cat > index.html  << EOF
 </head>
 <body>
 	<h1> $titulo </h1>
+	<p>Creada el $(date +"%x %r %Z") </p>
 </body>
 </html>
 
