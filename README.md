@@ -149,5 +149,5 @@ cat > index.html  << EOF
 EOF
 
 sudo cp index.html /var/www/html/miweb/index.html
-sudo chown 777 /var/www/html/miweb/index.html
+sudo chmod 777 /var/www/html/miweb/index.html
 ```
