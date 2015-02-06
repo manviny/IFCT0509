@@ -144,7 +144,11 @@ function system_info
     echo "funcion system_info"
 }
 
-
+function miperro
+{
+    # funcion temporal
+    echo "mi perro se llama chispa"
+}
 cat > index.html  << EOF
 
 <!DOCTYPE html>
@@ -155,7 +159,7 @@ cat > index.html  << EOF
 <body>
 	<h1> $titulo </h1>
 	<p>Creada el $fecha </p>
-	$(system_info)
+	$(miperro)
       	$(show_uptime)
       	$(drive_space)
       	$(home_space)
