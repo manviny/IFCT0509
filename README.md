@@ -134,7 +134,7 @@ $ sudo service apache2 restart
 #!/bin/bash
 
 titulo="Mi primera web"
-fecha=date +"%x %r %Z"
+fecha=$(date +"%x %r %Z")
 
 cat > index.html  << EOF
 
