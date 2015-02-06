@@ -134,6 +134,8 @@ $ sudo service apache2 restart
 #!/bin/bash
 
 titulo="Mi primera web"
+fecha=date +"%x %r %Z"
+
 cat > index.html  << EOF
 
 <!DOCTYPE html>
@@ -143,7 +145,7 @@ cat > index.html  << EOF
 </head>
 <body>
 	<h1> $titulo </h1>
-	<p>Creada el $(date +"%x %r %Z") </p>
+	<p>Creada el $fecha </p>
 </body>
 </html>
 
