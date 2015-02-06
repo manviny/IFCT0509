@@ -127,3 +127,23 @@ $ sudo find -type f -exec chmod 644 {} \;
 $ chmod 644  ./site/config.php
 $ sudo service apache2 restart
 ```
+
+
+#Scripts varios
+```bash
+#!/bin/bash
+
+cat > miweb  << EOF
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi primera web</title>
+</head>
+<body>
+	<h1>Mi primera web</h1>
+</body>
+</html>
+
+EOF
+```
