@@ -133,15 +133,16 @@ $ sudo service apache2 restart
 ```bash
 #!/bin/bash
 
+titulo="Mi primera web"
 cat > miweb  << EOF
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mi primera web</title>
+	<title> $titulo </title>
 </head>
 <body>
-	<h1>Mi primera web</h1>
+	<h1> $titulo </h1>
 </body>
 </html>
 
