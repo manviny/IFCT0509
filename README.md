@@ -133,8 +133,17 @@ $ sudo service apache2 restart
 ```bash
 #!/bin/bash
 
+##### Constantes
 titulo="Servidor: $HOSTNAME, usuario: $USER"
 fecha=$(date +"%x %r %Z")
+
+##### Funciones
+function system_info
+{
+    # funcion temporal
+    echo "funcion system_info"
+}
+
 
 cat > index.html  << EOF
 
@@ -146,6 +155,10 @@ cat > index.html  << EOF
 <body>
 	<h1> $titulo </h1>
 	<p>Creada el $fecha </p>
+	$(system_info)
+      	$(show_uptime)
+      	$(drive_space)
+      	$(home_space)
 </body>
 </html>
 
